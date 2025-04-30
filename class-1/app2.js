@@ -158,7 +158,7 @@
 
 // console.log(text);
 
-// ...do 
+// ...do
 // let i = 10;
 // let text = "";
 
@@ -169,8 +169,6 @@
 
 // console.log(text);
 // Do/while loop......
-
-
 
 // Break........................................
 // for (let i = 0; i < 10; i++) {
@@ -193,12 +191,263 @@
 // Set Methode,,,,,,,,,,,,,,,,,,,,,,,,,
 
 // Map Methode,,,,,,,,,,,,,,,,,,,,,,,,,
-const fruits = new Map();
+// const fruits = new Map();
 
-// Set Map Values
-fruits.set("apples", 500);
-fruits.set("bananas", 300);
-fruits.set("oranges", 200);
+// // Set Map Values
+// fruits.set("apples", 500);
+// fruits.set("bananas", 300);
+// fruits.set("oranges", 200);
 
-console.log(fruits)
+// console.log(fruits)
 // Map Methode,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// Regular Expression-----kono kichu search ba khuje ber korte use kora hoy ..............................
+// let text = "Visit Microsoft!";
+// let result = text.replace("Microsoft", "W3Schools");
+
+// console.log(text)
+// Regular Expression-----kono kichu search ba khuje ber korte use kora hoy ..............................
+
+// JavaScript Errors solve......................
+//  try {
+//     adddlert("Welcome guest!");
+//   }
+//   catch(err) {
+//     document.getElementById("demo").innerHTML = err.message;
+//   }
+// JavaScript Errors solve......................
+
+// JavaScript Scope............................
+// function myFunction() {
+//     let carName = "Volvo";   // Function Scope
+//   }
+// JavaScript Scope............................
+
+// JavaScript this Keyword.........................
+// const person1 = {
+//     fullName: function() {
+//       return this.firstName + " " + this.lastName;
+//     }
+//   }
+
+//   const person2 = {
+//     firstName:"John",
+//     lastName: "Doe",
+//   }
+
+//   // Return "John Doe":
+// console.log(person1.fullName.call(person2))
+// JavaScript this Keyword.........................
+
+// JavaScript Classes....................
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   play(status) {
+//     console.log(`${this.name} is playing ${status}`);
+//   }
+// }
+
+// const person1 = new Person("Shakib", 23);
+// const person2 = new Person("Shanto", 24);
+
+// person1.play("bad");
+// person2.play("good");
+// JavaScript Classes....................
+
+// Debugging.....................
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     // debugger;
+//     this.age = age;
+//   }
+//   play(status) {
+//     console.log(`${this.name} is playing ${status}`);
+//   }
+// }
+
+// const person1 = new Person("Shakib", 23);
+// const person2 = new Person("Shanto", 24);
+
+// // debugger;
+// person1.play("Bad");
+// person2.play("good");
+// Debugging.....................
+
+// ................................................................................................
+// .....................................Problem Solve 2............................................
+// ................................................................................................
+// Question=  "শান্ত" শব্দটি কতবার ব্যবহার হয়েছে? ""শান্ত" শব্দটি কত নম্বর অবস্থানে পাওয়া গেছে?
+
+// const description = "A shanto an individual or a team that creates, designs, builds, and maintains computer software or applications. They use programming languages, frameworks, tools, and shanto technologies to write code and develop software solutions for various computer systems like personal computers, shanto, embedded systems, and more.";
+
+// const matches = description.match(/shanto/gi);
+// const occurances = matches ? matches.length : 0;
+
+// console.log(occurances);
+
+// let position = description.search(/shanto/i);
+// position = position >= 0 ? position : "not found";
+
+// console.log(position);
+// ................................................................................................
+// .....................................Problem Solve 2............................................
+// ................................................................................................
+
+// ................................................................................................
+// .....................................Problem Solve 3............................................
+// ................................................................................................
+// input  linearsearch(["a", "b", "c", "d"], "c")
+// output 2 or not found.
+// probleam linearsearch() funtion ti implement kore dekhan"?
+
+// function linearSearch(arr, val) {
+//     const length = arr.length;
+
+//     for (let i = 0; i <length; i++) {
+//         if(arr[i] === val) {
+//           return i;
+//         }
+//     }
+
+//     return "not fount";
+// }
+
+// console.log(linearSearch(["a", "b", "c", "d"], "c"));
+
+// ................................................................................................
+// .....................................Problem Solve 3............................................
+// ................................................................................................
+
+// ................................................................................................
+// .....................................Problem Solve 4............................................
+// ................................................................................................
+// kono array theke kivabe sobtheke boro string khuje ber korben and tar index number koto ta dekhaben?
+
+// function longestString(names) {
+//     let longestWord = "";
+
+//     for(name of names) {
+//         if(name.length > longestWord.length) {
+//             longestWord = name;
+//         }
+//     }
+
+//     return [longestWord, names.indexOf(longestWord)];
+
+// }
+
+// console.log(longestString(["Khandaker Shanto", "Khandaker Fozle Rabby", "Robi", "Saif", "Siyam"]));
+// ................................................................................................
+// .....................................Problem Solve 4............................................
+// ................................................................................................
+
+// ................................................................................................
+// .....................................Problem Solve 5............................................
+// ................................................................................................
+// 1 - 100 porjonto kon shongkhagulo 3 , 5 and 3, 5 uvhoy shongkha dara bivajjo ta ber korun?
+// function fizzBuzz(number) {
+//   for (let i = 1; i <= number; i++) {
+//     if (i % 15 === 0) {
+//       console.log(`${i} is FizzBuzz`);
+//     } else if (i % 3 === 0) {
+//       console.log(`${i} is Fizz`);
+//     } else if (i % 5 === 0) {
+//       console.log(`${i} is Buzz`);
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+
+// fizzBuzz(100);
+// ................................................................................................
+// .....................................Problem Solve 5............................................
+// ................................................................................................
+
+
+// ................................................................................................
+// .....................................Problem Solve 6............................................
+// ................................................................................................
+// Array theke falsey value kivabe bad dite parii?..
+
+// const mixedArr = [
+//   "lws",
+//   undefined,
+//   "learn with shanto",
+//   false,
+//   "",
+//   "apple",
+//   40,
+//   true,
+//   "Thanks all",
+//   NaN
+// ]
+
+// const trueArray = mixedArr.filter(function(el) {
+//    if(el) {
+//     return true;
+//    } else {
+//     return false;
+//    }
+// });
+
+// console.log(trueArray);
+
+// Another way........
+
+// const mixedArr = [
+//   "lws",
+//   undefined,
+//   "learn with shanto",
+//   false,
+//   "",
+//   "apple",
+//   40,
+//   true,
+//   "Thanks all",
+//   NaN
+// ]
+
+// const trueArray = mixedArr.filter(Boolean);
+// console.log(trueArray);
+
+// ................................................................................................
+// .....................................Problem Solve 6............................................
+// ................................................................................................
+
+// ................................................................................................
+// .....................................Problem Solve 7............................................
+// ................................................................................................
+// Object theke falsey value kivabe bad dite parii?..
+const obj = {
+  a: "lws",
+  b: undefined,
+  c: "learn with shanto",
+  d: false,
+  e: "",
+  f: "apple",
+  g: 40,
+  h: true,
+  i: "Thanks all",
+  j: NaN,
+}
+
+const truthyObject = function(obj) {
+    for(let i in obj) {
+      if(!obj[i]) {
+        delete obj[i];
+      }
+    }
+
+    return obj;
+}
+console.log(truthyObject(obj));
+
+// ................................................................................................
+// .....................................Problem Solve 7............................................
+// ................................................................................................
